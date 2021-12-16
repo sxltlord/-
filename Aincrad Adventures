@@ -157,20 +157,3 @@ section1:addButton("Change!", function()
     
     game:GetService("ReplicatedStorage").Inventory.EquipWeapon:FireServer(unpack(args))
 end)
-
-local page6 = venyx:addPage("Inf money", 5012544693)
-local section1 = page6:addSection("inf money")
-
-section1:addButton("start inf money", function()
-while true do
-    local args = {
-    [1] = "MidnightCloak", 
-    [2] = "Armor", 
-    [3] = "None"
-}
-    
-    game:GetService("ReplicatedStorage").Inventory.EquipArmor:FireServer(unpack(args))
-    wait(1)
-    game:GetService("ReplicatedStorage").Quest.sellarmor:FireServer()
-    end
-end)
